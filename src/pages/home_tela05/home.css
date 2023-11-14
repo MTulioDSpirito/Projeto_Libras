@@ -1,0 +1,284 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #637F8D
+  }
+  #home-icon {
+
+    color: black;
+  }
+  
+  .text-main-color {
+  
+    text-align: center;
+    font-size: larger;
+  
+  
+  }
+  
+  .sign-up {
+    margin: 10rem auto;
+    padding: 5rem;
+  
+  }
+  
+  
+  
+  .sign-up p {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  .sign-up a {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .user-info {
+    text-align: center;
+    font-size: 14px;
+    align-items: baseline;
+  
+  }
+  
+  .facil {
+    position: absolute;
+    left: 12%;
+    top: 30.5%;
+    transform: translateY(-50%);
+    font-style: inherit;
+    font-family: "Inter", sans-serif;
+    color: rgb(9, 51, 149);
+    font-size: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  
+  .normal {
+    position: absolute;
+    left: 16.05%;
+    top: 54%;
+    transform: translateY(-50%);
+    font-style: inherit;
+    font-family: "Inter", sans-serif;
+    color: rgb(9, 51, 149);
+    font-size: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+  
+  }
+  
+  .dificil {
+    position: absolute;
+    left: 20%;
+    top: 76.5%;
+    transform: translateY(-50%);
+    font-style: inherit;
+    font-family: "Inter", sans-serif;
+    color: rgb(9, 51, 149);
+    font-size: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+  
+  }
+  
+  .icones {
+  
+    display: block;
+    margin-right: 90%;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20%;
+  
+  }
+  
+  .menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    width: 115%;
+    height: 10;
+    margin-bottom: 20px;
+    background-color: #dfdada;
+    border-radius: 10px;
+    padding: 35px;
+    margin-left: 35%;
+    position: absolute;
+    top: 475px;
+    /* Ajuste este valor para mover a imagem para baixo */
+  
+  
+  }
+  
+  .form-container {
+    padding: 1rem auto;
+  }
+  
+  .form-container p {
+    text-transform: uppercase;
+    margin: 1rem;
+  }
+  
+  .form-container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo-container h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-left: 5px;
+  }
+  
+  
+  
+  
+  #validar {
+    width: 12rem;
+  }
+  
+  @media (min-width: 400px) {
+    .sign-up {
+      width: 8rem;
+  
+    }
+  }
+  
+  @media (min-width: 500px) {
+    .sign-up {
+      width: 12rem;
+  
+    }
+  }
+  
+  @media (min-width: 600px) {
+  
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    .sign-up {
+      width: 15rem;
+    }
+  
+    .menu-bar {
+  
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+  
+      padding: 35px;
+      margin-left: 0%;
+  
+      top: 475px;
+  
+  
+  
+  
+    }
+  
+  }
+  
+  
+  
+  @media (min-width: 800px) {
+  
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .sign-up {
+      width: 26rem;
+      height: max-content;
+    }
+  
+    .icones {
+      width: 0.3rem;
+    }
+  
+  
+    .menu-bar {
+  
+  
+      width: 120%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-left: -23%;
+  
+      top: 469px;
+  
+  
+  
+  
+  
+    }
+  
+  
+  }
+  
+  
+  @media (min-width: 1024px) {
+  
+    /* big landscape tablets, laptops, and desktops */
+    .sign-up {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30rem;
+      height: max-content;
+  
+    }
+  
+    .icones {
+      display: flex;
+      width: 26rem;
+  
+    }
+  
+    .menu-bar {
+  
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+    width: 115%;
+    height: 10;
+  
+    
+    margin-left: 23.5%;
+    
+    top: 470px;
+  
+  
+  
+  
+    }
+  
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #637F8D
+  }

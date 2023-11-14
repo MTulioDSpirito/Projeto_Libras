@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="../base.css" />
+  <link rel="stylesheet" href="./login.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
+    rel="stylesheet" />
+
+  <title>DuoLibras</title>
+</head>
+
+<body>
+
+
+  <div class="card-mobile sign-up">
+    <!-- Adicione um estilo CSS para mover a div para cima -->
+    <div class="form-container" style="height: 80vh; position: relative; top: -10px;">
+      <img src="C:\Projeto_Libras\docs\img\Mask group.png" alt=Logo" width="180" height="200">
+      <p class="text-main-color">Faça seu login</p>
+      <p1 class="text-main-color">Recomece de onde parou.</p1>
+      <br />
+      <form name="form_login" id="form_cadastro" class="form-login">
+
+        <!-- method="POST" -->
+
+        <div id="msgError"></div>
+        <div id="msgSuccess"></div>
+
+
+        <br />
+        <label id="labelEmail" for="email"> </label>
+        <input type="email" class="input-base" id=email minlength=5 name=email placeholder=Email required />
+        <br />
+
+        <br />
+        <label id=labelSenha for=senha> </label>
+        <input type=password class=input-base id=senha name=senha minlength=6 placeholder=Senha required />
+        <br />
+        <br />
+        <input type=submit class='button-base bg-main-color button-sign-up validar' id='login' value='ENTRAR' />
+      </form>
+      <br />
+      <br />
+      <br />
+      <br />
+      <img src="C:\Projeto_Libras\docs\img\logo_duolibras 2.png" alt="Logo" width="200" height="70">
+      <br />
+      <br />
+      <p1 class="aviso">Ao entrar no Duolibras, você concorda com nossos termos e Política de Privavidade.</p1>
+    </div>
+
+  </div>
+  <script src=login.js></script>
+
+</body>
+
+</html>
