@@ -112,16 +112,15 @@ body {
     width: 115%;
     height: 10;
     margin-bottom: 20px;
-    background-color: #dfdada;
+    background-color: #ffffff; /* fundo branco */
+    border: 1px solid #d3d3d3; /* borda cinza claro com espessura fina */
     border-radius: 10px;
     padding: 35px;
     margin-left: 35%;
     position: absolute;
     top: 475px;
-    /* Ajuste este valor para mover a imagem para baixo */
-  
-  
-  }
+}
+
   
   .form-container {
     padding: 1rem auto;
@@ -243,9 +242,9 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      margin-left: -23%;
+      margin-left: -22.5%;
   
-      top: 469px;
+      top: 465px;
     }
  
   }
@@ -276,7 +275,7 @@ body {
     width: 115%;
     height: 10;
     margin-left: 23.5%;
-    top: 470px;
+    top: 468px;
     }
     .facil{
       font-size: 20px;
