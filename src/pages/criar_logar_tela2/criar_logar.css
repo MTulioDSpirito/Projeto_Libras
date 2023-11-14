@@ -109,6 +109,11 @@ body {
     /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
     .sign-up {
       width: 15rem;
+      height: max-content
+    }
+    .form-container p {
+      text-transform: lowercase;
+      margin: 0.1rem;
     }
   }
   
@@ -119,6 +124,10 @@ body {
       width: 26rem;
       height: max-content;
     }
+    .form-container p {
+      text-transform: uppercase;
+      margin: 1rem;
+    }
   }
   
   @media (min-width: 1024px) {
@@ -128,6 +137,13 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-around;
+      width: 30rem;
+      height: max-content;
+      
+    }
+    .form-container p {
+      text-transform: uppercase;
+      margin: 1rem;
     }
   }
   
