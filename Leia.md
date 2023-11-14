@@ -27,7 +27,7 @@
  - Agora é necessário o uso do comando "git clone >link do repositório aqui<". Esse comando irá copiar o repositório do Github para sua máquina.
 
  - Caso tenha dificuldade para copiar o link, o comando completo para clonar esse repositório é "git clone
-https://github.com/MTulioDSpirito/Projeto_Libras.git 
+![](https://github.com/MTulioDSpirito/Projeto_Libras.git) 
 
  - Feito isso verá que na pasta que está, foi criada uma nova pasta com o nome do repositório. Para entrar na pasta via cmd, digite "cd >nome da pasta aqui<".
 
