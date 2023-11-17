@@ -113,7 +113,7 @@ body {
     height: 10;
     margin-bottom: 20px;
     background-color: #ffffff; /* fundo branco */
-    border: 1px solid #d3d3d3; /* borda cinza claro com espessura fina */
+    border: 1px solid #d3ceced0; /* borda cinza claro com espessura fina */
     border-radius: 10px;
     padding: 35px;
     margin-left: 35%;
