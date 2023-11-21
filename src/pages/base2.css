@@ -13,9 +13,7 @@
     background-color: var(--background);
   }
   
-  .text-main-color {
-    color: var(--theme);
-  }
+  
   
   .bg-main-color {
     border: var(--theme);
