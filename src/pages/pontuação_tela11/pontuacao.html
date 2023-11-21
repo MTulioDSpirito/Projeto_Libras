@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+''
   <link rel="stylesheet" href="../reset.css" />
   <link rel="stylesheet" href="../base2.css" />
   <link rel="stylesheet" href="../../pages/pontuação_tela11/pontuacao.css" />
@@ -34,13 +34,15 @@
         <br/>
         <br/>
         <p id="score"></p>
+        <p id="message"></p>
         <br />
         <br /> 
+        <button class='button-base bg-main-color button-sign-upon' onclick="window.location.href='../home_tela05/home.html'" >Recomeçar</button>
         <br />
         <br />
         
         <div class="menu-bar">
-          <a href="">
+          <a href="../home_tela05/home.html">
             <img src="C:\Projeto_Libras\docs\img\home.png" alt="icon" width="50" height="50"/>
           </a>
           <a href="">
@@ -60,10 +62,6 @@
 
   </div>
   <script src="pontuacao.js"></script>
-  <script>
-    let points = 0; // Esta é a pontuação do usuário. Você precisará atualizar isso com a pontuação real do usuário.
-    document.getElementById('score').innerText = points;
-  </script>
 
 </body>
 

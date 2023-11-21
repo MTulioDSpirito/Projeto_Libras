@@ -100,7 +100,9 @@ font-size: large;
     padding: 35px;
     margin-left: 5%;
     position: absolute;
-    top: 462px;
+    top: 480px;
+    height: 30px;
+  
 }
 
   
@@ -164,15 +166,17 @@ font-size: large;
     
     .menu-bar {
   
-      width: 132%;
+      width: 115%;
       align-items: center;
       justify-content: center;
       justify-content: space-evenly;
+      height: 30px;
+  
   
 
-      margin-left: -25%;
+      margin-left: 1%;
   
-      top: 465px;
+      top: 480px;
   
   
   
@@ -193,13 +197,13 @@ font-size: large;
   
   
     .menu-bar {
-      width: 120%;
+      width: 115%;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      margin-left: -22.5%;
+      margin-left: 1%;
   
-      top: 467px;
+      top: 480px;
     }
  
   }
@@ -229,8 +233,8 @@ font-size: large;
     justify-content: space-evenly;
     width: 180%;
     height: 10;
-    margin-left: 3%;
-    top: 467+px;
+    margin-left: 2%;
+    top: 480px;
     }
     
   }

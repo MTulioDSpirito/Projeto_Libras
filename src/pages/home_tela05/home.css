@@ -110,7 +110,7 @@ body {
     justify-content: space-evenly;
     margin-top: 5px;
     width: 115%;
-    height: 10;
+    height: 30px;
     margin-bottom: 20px;
     background-color: #ffffff; /* fundo branco */
     border: 1px solid #d3ceced0; /* borda cinza claro com espessura fina */
@@ -118,7 +118,7 @@ body {
     padding: 35px;
     margin-left: 35%;
     position: absolute;
-    top: 475px;
+    top: 480px;
 }
 
   
@@ -198,11 +198,12 @@ body {
       align-items: center;
       justify-content: center;
       justify-content: space-evenly;
+      height: 30px;
   
 
       margin-left: -25%;
   
-      top: 470px;
+      top: 480px;
   
   
   
@@ -243,8 +244,10 @@ body {
       align-items: center;
       justify-content: space-evenly;
       margin-left: -22.5%;
+      height: 30px;
+      
   
-      top: 465px;
+      top: 480px;
     }
  
   }
@@ -273,9 +276,9 @@ body {
     align-items: center;
     justify-content: space-evenly;
     width: 115%;
-    height: 10;
+    height: 30px;
     margin-left: 23.5%;
-    top: 468px;
+    top: 480px;
     }
     .facil{
       font-size: 20px;
