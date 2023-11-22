@@ -20,7 +20,7 @@ function salvarDados() {
     salvarDados();
   
     alert('USUÁRIO CRIADO COM SUCESSO !!');
-    window.location.href = "C:/Projeto_Libras/src/pages/login_tela3/login.html";
+    window.location.href = "/src/pages/login_tela3/login.html";
   });
   
   // Adicionando evento de clique ao botão de login
