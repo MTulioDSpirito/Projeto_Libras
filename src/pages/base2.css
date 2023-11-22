@@ -74,16 +74,7 @@
     @@@ DESKTOP TEMPLATE STYLES @@@
   */
   
-  .left-navbar {
-    display: flex;
-    flex-direction: column;
-    background-color: #f2f4f6;
-    height: 100%;
-    width: 7rem;
-    padding: 1rem;
-    position: fixed;
-    left: 0;
-  }
+
   
   .logo-nav {
     display: flex;
@@ -134,15 +125,7 @@
     text-shadow: rgba(0, 0, 0, 0.3) 0 0 1px;
   }
   
-  .top-navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0.5rem 1rem 0.5rem 0rem;
-    width: 100%;
-    background-color: #ffffff;
-  }
+  
   
   .app {
     display: flex;

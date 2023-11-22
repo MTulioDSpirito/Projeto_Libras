@@ -9,6 +9,7 @@ window.onload = function() {
   // Recupere a pontuação total do armazenamento local e converta para um número. Se não houver pontuação salva, use 0.
   let points = Number(localStorage.getItem('points')) || 0;
   // Exiba a pontuação total na tela.
+  
 let questions = points / 3;
 // Exiba o resultado do usuário na tela, usando o elemento <p> com id="result".
 document.getElementById('result').innerText = 'Você acertou ' + questions + ' questão(ões)';
@@ -30,5 +31,8 @@ document.getElementById('result').innerText = 'Você acertou ' + questions + ' q
     scoreElement.style.color = 'green';
     messageElement.style.color = 'green';
     messageElement.innerText = 'Parabéns, você brilhou';
+  }
+  else if (points == none){
+    points == 0 ;
   }
 }
