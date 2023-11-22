@@ -4,9 +4,15 @@ window.onload = function() {
   if(usuario) {
     document.getElementById('user-info').textContent = usuario.nome;
   }
+
+  
   // Recupere a pontuação total do armazenamento local e converta para um número. Se não houver pontuação salva, use 0.
   let points = Number(localStorage.getItem('points')) || 0;
   // Exiba a pontuação total na tela.
+let questions = points / 3;
+// Exiba o resultado do usuário na tela, usando o elemento <p> com id="result".
+document.getElementById('result').innerText = 'Você acertou ' + questions + ' questão(ões)';
+// Exiba a pontuação total na tela, usando o elemento <p> com id="score".
   document.getElementById('score').innerText = points;
   // Altere o tamanho e a cor do texto com base na pontuação.
   let scoreElement = document.getElementById('score');
