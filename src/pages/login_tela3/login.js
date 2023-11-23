@@ -7,7 +7,7 @@ function validarLogin() {
   
     if (email == usuario.email && senha == usuario.senha) {
       alert('Login bem sucedido!');
-      window.location.href = '/src/pages/home_tela05/home.html'; // Redireciona para a página inicial
+      window.location.href = '../home_tela05/home.html'; // Redireciona para a página inicial
     } else {
       alert('Email ou senha incorretos!');
     }
