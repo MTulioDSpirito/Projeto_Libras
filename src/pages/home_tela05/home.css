@@ -169,8 +169,15 @@ body {
   .icones {
     float: left;
   margin-left: 130px;
-       
+  flex-direction: column;
+  justify-content: space-evenly;     
   }
+    .icone p1 {
+        display: block;
+      
+        justify-content:center;
+        align-items: center;
+    }
 
     .facil {
     
@@ -195,7 +202,7 @@ body {
       justify-content: space-evenly;
       height: 30px;
       margin-left: -8%;
-      top: 480px;
+      top: 500px;
   
     }
 
@@ -211,7 +218,7 @@ body {
       display: block;
       font-size: 14px;
       color: rgb(9, 51, 149);
-      top:34.8%;
+      top:39%;
       left: 14%;
     }
     
@@ -220,18 +227,26 @@ body {
     display: block;
     font-size: 14px;
     color: rgb(9, 51, 149);
+    top: 58%;
   }
   
   .dificil{
     display: block;
     font-size: 14px;
     color: rgb(9, 51, 149);
-    top:72%;
+    top:78%;
   }
   .icones{
     display: block;
-    margin-left: -30px;
+    margin-left: -35px;
+   
+    
+  
   }
+  .icone p1 {
+    display: none;
+}
+
     .menu-bar {
   
       width: 120%;
@@ -243,7 +258,7 @@ body {
 
       margin-left: 0%;
   
-      top: 480px;
+      top: 500px;
   
     }
   
@@ -266,15 +281,18 @@ body {
     .facil{
       font-size: 20px;
       left:18%;
+      top:35%
     }
     .normal
   {
     font-size: 20px;
+    top: 55%;
   }
   
   .dificil{
     font-size: 20px;
     left: 14%;
+    top: 72%;
   }
    .menu-bar {
       width: 120%;
@@ -283,7 +301,7 @@ body {
       justify-content: space-evenly;
       margin-left: 0%;
       height: 30px;
-       top: 480px;
+       top: 500px;
     }
   
   }
@@ -319,18 +337,18 @@ body {
     width: 115%;
     height: 30px;
     margin-left: 0%;
-    top: 480px;
+    top: 500px;
     }
     .facil{
       font-size: 20px;
       left:25%;
-      top: 31%;
+      top: 34%;
       
     }
     .normal
   {
     font-size: 20px;
-    top: 52%;
+    top: 54%;
     left: 30%;
   
     
