@@ -56,9 +56,6 @@ font-size:medium;
       left: 0%;
       
       justify-content: center
-
-
-
     }
  
   
@@ -148,18 +145,38 @@ font-size:medium;
     width: 12rem;
   }
   
-  @media (min-width: 400px) {
-    .sign-up {
-      width: 8rem;
   
-    }
-  }
   
   @media (min-width: 500px) {
     .sign-up {
       width: 12rem;
+    }
+    .sign-up {
+      width: 12rem;
   
     }
+    .calendario {
+     width: 85px;
+     height: 85px;
+     top:-25%;
+    
+      }
+      .quiz-option {
+        font-size: 0.05rem;
+        justify-content:space-between;
+        align-items: baseline;
+        display: inline-block;
+    
+  
+      }
+      
+      .menu-bar{
+        top: 500px;
+        width: auto;
+
+
+
+      }
   }
   
   @media (min-width: 600px) {
@@ -171,23 +188,29 @@ font-size:medium;
     
     .menu-bar {
   
-      width: 115%;
-      align-items: center;
-      justify-content: center;
+      width: 115%; 
       justify-content: space-evenly;
       height: 30px;
-  
-
       margin-left: 1%;
-  
-      top: 580px;
-  
-  
-  
-  
+       top: 500px;
     }
+
+    
+    .calendario {
+     width: 100px;
+     height: 90px;
+      }
+      .quiz-option {
+        font-size: 0.1rem;
   
-  }
+      }
+      
+
+
+
+      }
+  
+ 
   
   
   
@@ -201,14 +224,32 @@ font-size:medium;
   
   
     .menu-bar {
-      width: 115%;
+      width: 110%;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       margin-left: 1%;
-  
-      top: 580px;
+      top: 500px;
     }
+    .quiz-option {
+      display: inline;
+      font-size: 2em;
+      text-align: center;
+      position: relative;
+      top: -25%;
+      left: 0%;     
+      justify-content:space-evenly;
+    }
+    .calendario {
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10%;
+      top: -20%;
+      position: relative;
+      width: 140px;
+     height: 120px;
+      }
+ 
  
   }
   
@@ -225,11 +266,7 @@ font-size:medium;
   
     }
   
-    .icones {
-      display: flex;
-      width: 26rem;
-  
-    }
+    
   
     .menu-bar {
     display: flex;

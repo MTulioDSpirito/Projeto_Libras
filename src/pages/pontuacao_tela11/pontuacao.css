@@ -141,12 +141,7 @@ body {
   width: 12rem;
 }
 
-@media (min-width: 400px) {
-  .sign-up {
-    width: 8rem;
 
-  }
-}
 
 @media (min-width: 500px) {
   .sign-up {
@@ -161,7 +156,7 @@ body {
     justify-content: space-evenly;
     height: 10px;
     margin-left: 1%;
-    top: 530px;
+    top: 520px;
   }
   .button-sign-upon {
     margin-bottom: 10px;
@@ -183,7 +178,7 @@ body {
     justify-content: space-evenly;
     height: 30px;
     margin-left: 1%;
-    top: 510px;
+    top: 500px;
   }
 
   .button-base {
@@ -205,13 +200,13 @@ body {
 
 
   .menu-bar {
-    width: 115%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-left: 1%;
 
-    top: 485px;
+    top: 500px;
   }
 
 }
@@ -242,7 +237,7 @@ body {
     width: 115%;
     height: 10;
     margin-left: 1%;
-    top: 485px;
+    top: 500px;
   }
 
 }

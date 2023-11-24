@@ -148,18 +148,29 @@ font-size:medium;
     width: 12rem;
   }
   
-  @media (min-width: 400px) {
-    .sign-up {
-      width: 8rem;
-  
-    }
-  }
   
   @media (min-width: 500px) {
     .sign-up {
       width: 12rem;
   
     }
+      .calendario {
+       width: 180px;
+       height:120px;
+             }
+        .quiz-option {
+          font-size:1rem;
+          justify-content:space-between;
+          align-items: baseline;
+          display: inline-block;   
+        }
+        
+        .menu-bar{
+          top: 515px;
+          width: auto;
+          justify-content:space-evenly;
+        
+        }
   }
   
   @media (min-width: 600px) {
@@ -174,18 +185,23 @@ font-size:medium;
       width: 115%;
       align-items: center;
       justify-content: center;
-      justify-content: space-evenly;
-      height: 30px;
-  
-
+      justify-content: space-evenly;   
       margin-left: 1%;
-  
-      top: 580px;
-  
-  
-  
-  
+      top: 500px; 
     }
+    .calendario {
+      width: 200px;
+      height:140px;
+     
+     
+       }
+       .quiz-option {
+         font-size:1.3rem;
+         justify-content:space-between;
+         align-items: baseline;
+         display: inline-block;
+     
+       }
   
   }
   
@@ -201,15 +217,38 @@ font-size:medium;
   
   
     .menu-bar {
-      width: 115%;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       margin-left: 1%;
   
-      top: 580px;
+      top: 500px;
     }
- 
+
+    .calendario {
+      width: 240px;
+      height:150px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10%;
+      top: -20%;
+      position: relative;
+      }
+
+      .quiz-option {
+        font-size: 1.3rem;
+        text-align: justify;
+        position: relative;
+        top: -18%;
+        left: 0%;
+        
+        justify-content: center
+  
+  
+  
+      }
+   
   }
   
   
@@ -235,7 +274,7 @@ font-size:medium;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 180%;
+    width: 140%;
     height: 10;
     margin-left: 2%;
     top: 500px;
