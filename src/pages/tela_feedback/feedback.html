@@ -7,13 +7,13 @@
 
   <link rel="stylesheet" href="../reset.css" />
   <link rel="stylesheet" href="../base.css" />
-  <link rel="stylesheet" href="./criar_logar.css" />
+  <link rel="stylesheet" href="./feedback.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
     rel="stylesheet" />
 
-  <title>DuoLibras</title>
+  <title>DuoLibras Tela_Feedback</title>
 </head>
 
 <body>
@@ -24,40 +24,34 @@
     <div class="form-container" style="height: 78vh; position: relative; top: -10px;">
       <br />
       <img src="../img/Mask group.png" alt=Logo width="180" height="220">
-      <p class="text-main-color">Já tem uma conta?</p>
+      <p class="text-main-color">Qual sua opnião sobre os nossos serviços?</p>
       <br>
-      <p class="text-main-color">Crie um perfil no DuoLibras<br> ou recomece de onde parou.</p>
-
+      <p class="text-main-color">Gostaríamos de conhecer a sua opinião. Atráves do seu feedback vamos melhorarando nosso app 😃
       <br />
       <br />
 
-      <form name="form_login" id="form_cadastro" class="form-login">
-        <input type=submit class='button-base bg-main-color button-sign-up validar' id="botao-criar-perfil"
-          value='CRIAR PERFIL' />
-        <br />
-        <br />
-        <br />
-        <input type=submit class='button-base bg-main-color button-sign-up validar' value='ENTRAR' id="entrar" />
-      </form>
+      
+        <form action="/submit_feedback" method="post">
+          <textarea id="feedback" name="feedback" rows="7" cols="50"></textarea><br>
+          <a href="/Projeto_Libras/src/pages/tela_feedback/index.html"><input style="background-color: #001685; border: none;color: azure;" type="button" value="Enviar"></a>
+    
+
       <br />
       <br />
       <br />
       <br />
       <br />
 
+          <img src="/Projeto_Libras/src/pages/img/logo_duolibras 2.png" alt="logo_duolibras">
 
-
-
-      <img src="/Projeto_Libras/docs/img/logo_duolibras 2.png" alt="Logo" width="200" height="70">
       <br />
-      <br />
-      <br />
-      <br />
-      <p1 class="aviso">Ao entrar no Duolibras, você concorda com nossos termos e Política de Privavidade.</p1>
+      
+     
+      
     </div>
 
   </div>
-  <script src=criar_logar.js></script>
+  <script src=></script>
 
 </body>
 

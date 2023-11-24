@@ -23,41 +23,7 @@ body {
     padding: 5rem;
   
   }
-   .calendario {
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10%;
-    top: -20%;
-    position: relative;
-    }
- #pergunta{
-position: relative;
-font-size: large;
-top:-6%;
-
- }
- .button-base {
-position: relative;
-top:-22%;
-height: 3rem;
-margin: auto;
-font-size:medium;
-
-
-
- }
- 
- 
-    .quiz-option {
-      font-size: 2em;
-      text-align: justify;
-      position: relative;
-      top: -28%;
-      left: 0%;
-      
-      justify-content: center
-    }
- 
+  
   
   
   .sign-up p {
@@ -87,24 +53,72 @@ font-size:medium;
   
   }
   
+  .facil {
+    position: absolute;
+    left: 12%;
+    top: 30.5%;
+    transform: translateY(-50%);
+    font-style: inherit;
+    font-family: "Inter", sans-serif;
+    color: rgb(9, 51, 149);
+    font-size: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+  }
   
+  .normal {
+    position: absolute;
+    left: 16.05%;
+    top: 54%;
+    transform: translateY(-50%);
+    font-style: inherit;
+    font-family: "Inter", sans-serif;
+    color: rgb(9, 51, 149);
+    font-size: 20px;
+    text-align: center;
+    justify-content: space-evenly;
   
+  }
+  
+  .dificil {
+    position: absolute;
+    left: 20%;
+    top: 76.5%;
+    transform: translateY(-50%);
+    font-style: inherit;
+    font-family: "Inter", sans-serif;
+    color: rgb(9, 51, 149);
+    font-size: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+  
+  }
+  
+  .icones {
+  
+    display: block;
+    margin-right: 90%;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20%;
+  
+  }
   
   .menu-bar {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 5px;
-    width: 160%;
+    width: 115%;
     height: 30px;
     margin-bottom: 20px;
     background-color: #ffffff; /* fundo branco */
     border: 1px solid #d3ceced0; /* borda cinza claro com espessura fina */
     border-radius: 10px;
     padding: 35px;
-    margin-left: 5%;
+    margin-left: 35%;
     position: absolute;
-    top: 580px;
+    top: 480px;
 }
 
   
@@ -145,38 +159,18 @@ font-size:medium;
     width: 12rem;
   }
   
+  @media (min-width: 400px) {
+    .sign-up {
+      width: 8rem;
   
+    }
+  }
   
   @media (min-width: 500px) {
     .sign-up {
       width: 12rem;
-    }
-    .sign-up {
-      width: 12rem;
   
     }
-    .calendario {
-     width: 85px;
-     height: 85px;
-     top:-25%;
-    
-      }
-      .quiz-option {
-        font-size: 0.05rem;
-        justify-content:space-between;
-        align-items: baseline;
-        display: inline-block;
-    
-  
-      }
-      
-      .menu-bar{
-        top: 500px;
-        width: auto;
-
-
-
-      }
   }
   
   @media (min-width: 600px) {
@@ -185,32 +179,38 @@ font-size:medium;
     .sign-up {
       width: 15rem;
     }
+    .facil{
+      font-size: 14px;
+    }
     
+    .normal
+  {
+    font-size: 14px;
+  }
+  
+  .dificil{
+    font-size: 14px;
+  }
+  
     .menu-bar {
   
-      width: 115%; 
+      width: 132%;
+      align-items: center;
+      justify-content: center;
       justify-content: space-evenly;
       height: 30px;
-      margin-left: 1%;
-       top: 500px;
+  
+
+      margin-left: -25%;
+  
+      top: 480px;
+  
+  
+  
+  
     }
-
-    
-    .calendario {
-     width: 100px;
-     height: 90px;
-      }
-      .quiz-option {
-        font-size: 0.1rem;
   
-      }
-      
-
-
-
-      }
-  
- 
+  }
   
   
   
@@ -222,34 +222,33 @@ font-size:medium;
       height: max-content;
     }
   
+    .icones {
+      width: 0.3rem;
+    }
+    .facil{
+      font-size: 20px;
+    }
+    .normal
+  {
+    font-size: 20px;
+  }
+  
+  .dificil{
+    font-size: 20px;
+  }
+  
   
     .menu-bar {
-      width: 110%;
+      width: 120%;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      margin-left: 1%;
-      top: 500px;
+      margin-left: -22.5%;
+      height: 30px;
+      
+  
+      top: 480px;
     }
-    .quiz-option {
-      display: inline;
-      font-size: 2em;
-      text-align: center;
-      position: relative;
-      top: -25%;
-      left: 0%;     
-      justify-content:space-evenly;
-    }
-    .calendario {
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 10%;
-      top: -20%;
-      position: relative;
-      width: 140px;
-     height: 120px;
-      }
- 
  
   }
   
@@ -266,18 +265,32 @@ font-size:medium;
   
     }
   
-    
+    .icones {
+      display: flex;
+      width: 26rem;
+  
+    }
   
     .menu-bar {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 115%;
-    height: 10;
-    margin-left: 2%;
-    top: 500px;
+    height: 30px;
+    margin-left: 23.5%;
+    top: 480px;
     }
-    
+    .facil{
+      font-size: 20px;
+    }
+    .normal
+  {
+    font-size: 20px;
+  }
+  
+  .dificil{
+    font-size: 20px;
+  }
   }
   
   body {

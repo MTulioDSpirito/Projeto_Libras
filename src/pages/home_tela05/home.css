@@ -55,7 +55,7 @@ body {
   
   .facil {
     position: absolute;
-    left: 12%;
+    left: 9.45%;
     top: 30.5%;
     transform: translateY(-50%);
     font-style: inherit;
@@ -68,7 +68,7 @@ body {
   
   .normal {
     position: absolute;
-    left: 16.05%;
+    left: 20%;
     top: 54%;
     transform: translateY(-50%);
     font-style: inherit;
@@ -82,7 +82,7 @@ body {
   
   .dificil {
     position: absolute;
-    left: 20%;
+    left: 21%;
     top: 76.5%;
     transform: translateY(-50%);
     font-style: inherit;
@@ -96,10 +96,10 @@ body {
   
   .icones {
   
-    display: block;
-    margin-right: 90%;
+   
+    margin-right: 80%;
     flex-direction: column;
-    text-align: center;
+    text-align: right;
     margin-bottom: 20%;
   
   }
@@ -159,18 +159,53 @@ body {
     width: 12rem;
   }
   
-  @media (min-width: 400px) {
-    .sign-up {
-      width: 8rem;
-  
-    }
-  }
+ 
   
   @media (min-width: 500px) {
     .sign-up {
+      
       width: 12rem;
+  }
+  .icones {
+    float: left;
+  margin-left: 130px;
+  flex-direction: column;
+  justify-content: space-evenly;     
+  }
+    .icone p1 {
+        display: block;
+      
+        justify-content:center;
+        align-items: center;
+    }
+
+    .facil {
+    
+      display: none;
+    }
+    
+    .normal {
+      
+      display: none;
+    }
+    
+    .dificil {
+      
+      display: none;
+     
+    }
+    .menu-bar {
+  
+      width: 120%;
+      align-items: center;
+     
+      justify-content: space-evenly;
+      height: 30px;
+      margin-left: -8%;
+      top: 500px;
   
     }
+
   }
   
   @media (min-width: 600px) {
@@ -180,33 +215,50 @@ body {
       width: 15rem;
     }
     .facil{
+      display: block;
       font-size: 14px;
+      color: rgb(9, 51, 149);
+      top:39%;
+      left: 14%;
     }
     
     .normal
   {
+    display: block;
     font-size: 14px;
+    color: rgb(9, 51, 149);
+    top: 58%;
   }
   
   .dificil{
+    display: block;
     font-size: 14px;
+    color: rgb(9, 51, 149);
+    top:78%;
   }
+  .icones{
+    display: block;
+    margin-left: -35px;
+   
+    
   
+  }
+  .icone p1 {
+    display: none;
+}
+
     .menu-bar {
   
-      width: 132%;
+      width: 120%;
       align-items: center;
       justify-content: center;
       justify-content: space-evenly;
       height: 30px;
   
 
-      margin-left: -25%;
+      margin-left: 0%;
   
-      top: 480px;
-  
-  
-  
+      top: 500px;
   
     }
   
@@ -224,32 +276,34 @@ body {
   
     .icones {
       width: 0.3rem;
+      margin-left: -10px;
     }
     .facil{
       font-size: 20px;
+      left:18%;
+      top:35%
     }
     .normal
   {
     font-size: 20px;
+    top: 55%;
   }
   
   .dificil{
     font-size: 20px;
+    left: 14%;
+    top: 72%;
   }
-  
-  
-    .menu-bar {
+   .menu-bar {
       width: 120%;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      margin-left: -22.5%;
+      margin-left: 0%;
       height: 30px;
-      
-  
-      top: 480px;
+       top: 500px;
     }
- 
+  
   }
   
   
@@ -266,8 +320,13 @@ body {
     }
   
     .icones {
-      display: flex;
-      width: 26rem;
+      
+      margin-left: -20px;
+      justify-content: space-evenly;
+      align-items: center;
+      
+    
+  
   
     }
   
@@ -277,19 +336,28 @@ body {
     justify-content: space-evenly;
     width: 115%;
     height: 30px;
-    margin-left: 23.5%;
-    top: 480px;
+    margin-left: 0%;
+    top: 500px;
     }
     .facil{
       font-size: 20px;
+      left:25%;
+      top: 34%;
+      
     }
     .normal
   {
     font-size: 20px;
+    top: 54%;
+    left: 30%;
+  
+    
   }
   
   .dificil{
     font-size: 20px;
+    left:21.52%;
+    top: 73%;
   }
   }
   

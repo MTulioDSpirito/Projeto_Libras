@@ -48,7 +48,7 @@ margin: auto;
  
  
     .quiz-option {
-      font-size: 2em;
+      font-size: 2rem;
       text-align: justify;
       position: relative;
       top: -25%;
@@ -147,18 +147,28 @@ margin: auto;
     width: 12rem;
   }
   
-  @media (min-width: 400px) {
-    .sign-up {
-      width: 8rem;
-  
-    }
-  }
   
   @media (min-width: 500px) {
     .sign-up {
       width: 12rem;
   
     }
+    .borboleta {
+     width: 85px;
+     height: 85px;
+      }
+      .quiz-option {
+        font-size: 0.2rem;
+  
+      }
+      .menu-bar{
+        top: 500px;
+        width: auto;
+
+
+
+      }
+   
   }
   
   @media (min-width: 600px) {
@@ -170,16 +180,12 @@ margin: auto;
     
     .menu-bar {
   
-      width: 115%;
+      width: 100%;
       align-items: center;
       justify-content: center;
       justify-content: space-evenly;
-      height: 30px;
-  
-
       margin-left: 1%;
-  
-      top: 580px;
+      top: 500px;
   
   
   
@@ -200,13 +206,28 @@ margin: auto;
   
   
     .menu-bar {
-      width: 115%;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       margin-left: 1%;
   
-      top: 580px;
+      top: 500px;
+    }
+    .quiz-option {
+      font-size: 2rem;
+      text-align: justify;
+      position: relative;
+      top: -25%;
+      left: 0%;
+      
+      justify-content: center
+
+    }
+    .borboleta{
+      width: 120px;
+      height: 100px;
+
     }
  
   }
