@@ -155,6 +155,11 @@ font-size: large;
       width: 12rem;
   
     }
+    .menu-bar {
+      
+      width: 110%;
+      
+      }
   }
   
   @media (min-width: 600px) {

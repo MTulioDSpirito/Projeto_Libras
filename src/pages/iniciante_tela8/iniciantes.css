@@ -153,6 +153,20 @@ font-size: large;
       width: 12rem;
   
     }
+    .menu-bar {
+  
+      width: 110%;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-evenly;
+      height: 30px;
+  
+
+      margin-left: 1%;
+  
+      top: 480px;
+  
+    }
   }
   
   @media (min-width: 600px) {
