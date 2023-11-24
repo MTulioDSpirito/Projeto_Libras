@@ -1,0 +1,175 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f9fa
+  }
+
+.titulo{
+
+font-size: 45px;
+color: aliceblue;
+margin-bottom: 30px;
+}
+.btn{
+  padding: 15px 55px;
+  color: #f6f9fa;
+  background-color:#001685;
+  border-radius: 10px;
+  text-decoration: none;
+
+}
+
+.paragrafo{
+
+  color: #f6f9fa;
+}
+  
+  .text-main-color {
+  
+    text-align: center;
+    font-size: larger;
+    font-family: 'Inter' sans-serif;
+  
+  
+  }
+  
+  .sign-up {
+    margin: 10rem auto;
+    padding: 5rem;
+  }
+  
+  .sign-up p {
+    font-family: "Inter", sans-serif;
+    font-weight: 60;
+    font-size: 1.2rem;
+  }
+  
+  .sign-up a {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-container {
+    padding: 1rem auto;
+  }
+  
+  .form-container p {
+    text-transform: uppercase;
+    margin: 1rem;
+  }
+  
+  .form-container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo-container h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-left: 5px;
+  }
+  
+  #msgError {
+    text-align: center;
+    color: #ff0000;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }
+  
+  
+  #msgSuccess {
+    color: green;
+    font-size: 16px;
+  }
+  
+  
+  .validar {
+    width: 12rem;
+  }
+  
+  @media (min-width: 400px) {
+    .sign-up {
+      width: 8rem;
+  
+    }
+  }
+  
+  @media (min-width: 500px) {
+    .sign-up {
+      width: 12rem;
+  
+    }
+  }
+  
+  @media (min-width: 600px) {
+  
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    .sign-up {
+      width: 15rem;
+      height: max-content
+    }
+    .form-container p {
+      text-transform: lowercase;
+      margin: 0.1rem;
+    }
+  }
+  
+  @media (min-width: 800px) {
+  
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .sign-up {
+      width: 26rem;
+      height: max-content;
+    }
+    .form-container p {
+      text-transform: uppercase;
+      margin: 1rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+  
+    /* big landscape tablets, laptops, and desktops */
+    .sign-up {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 30rem;
+      height: max-content;
+      
+    }
+    .form-container p {
+      text-transform: uppercase;
+      margin: 1rem;
+    }
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f9fa
+  }
