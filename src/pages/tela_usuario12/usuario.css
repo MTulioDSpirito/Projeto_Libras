@@ -6,11 +6,6 @@ body {
   background-color: #637F8D
 }
 
-#home-icon {
-
-  color: black;
-}
-
 .text-main-color {
 
   text-align: center;
@@ -24,36 +19,6 @@ body {
   padding: 5rem;
 
 }
-
-.librasmao {
-
-  margin-right: 50%;
-  flex-direction: column;
-
-  margin-bottom: 10%;
-
-}
-
-#pergunta {
-
-  font-size: large;
-
-
-
-}
-
-
-
-.quiz-option {
-  font-size: 2em;
-  text-align: justify;
-  position: relative;
-  top: -24%;
-  left: 30%;
-
-  justify-content: center
-}
-
 
 
 .sign-up p {
@@ -77,13 +42,9 @@ body {
 }
 
 .user-info {
-  text-align: center;
   font-size: 14px;
-  align-items: baseline;
-
+  font-family: "Inter", sans-serif;
 }
-
-
 
 
 .menu-bar {
@@ -221,7 +182,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 180%;
+    width: 190%;
     height: 10;
     margin-left: 2%;
     top: 480px;
