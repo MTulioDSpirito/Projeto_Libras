@@ -7,32 +7,42 @@
 
   <link rel="stylesheet" href="../reset.css" />
   <link rel="stylesheet" href="../base2.css" />
-  <link rel="stylesheet" href="../tela_usuario12/usuario.css" />
+  <link rel="stylesheet" href="../../pages/tela_usuario12/usuario.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
     rel="stylesheet" />
 
-  <title>DuoLibras - Tela Usuario</title>
+  <title>DuoLibras</title>
 </head>
 
 <body>
 
+
   <div class="card-mobile sign-up">
-    <p class="text-main-color">Editar Perfil</p>
-    <br/>
-    <div class="user-info-menu">
-      <br/>
-      <br/>
-      <img src="../img/user.png" alt="icon" width="50" height="50" />
-      <p1 class="user-info-menu" id="user-info-menu">Fulano</p1>
-    </div>
+
+    <!-- Adicione um estilo CSS para mover a div para cia -->
     <div class="form-container" style="height: 72vh; position:relative; top: -10px;">
-      <label for="emailInput">E-mail:</label>
-      <input type="email" id="emailInput" readonly>
+      <p class="text-main-color">EDITAR PERFIL</p>
       <br />
-      <label for="passwordInput">Senha:</label>
-      <input type="password" id="passwordInput" readonly>
+      <br />
+      <img src="../img/user.png" alt="icon" width="50" height="50" />
+      <p1 class="user-info-menu" id="user-info-menu"></p1>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="user-info">
+        <label for="emailInput">E-mail:</label>
+        <input type="email" id="emailInput" readonly>
+        <br />
+        <br />
+        <label for="passwordInput">Senha:</label>
+        <input type="password" id="passwordInput" readonly>
+      </div>
+      <br />
+      <br />
+      <br />
       <br />
       <div class="menu-bar">
         <a href="../home_tela05/home.html">
@@ -41,18 +51,13 @@
         <a href="">
           <img id="home-icon" class="left-nav-icon" src="../img/tarefas.png" alt="tarefas" width="50" height="50" />
         </a>
-        <a href="">
-          <img src="../img/user.png" alt="icon" width="50" height="50" style="color: black;" />
-          <br />
-          <p1 class="user-info" id="user-info"></p1>
-        </a>
       </div>
     </div>
   </div>
 
 
-
-  <script src="home.js"></script>
+  </div>
+  <script src="iniciante2.js"></script>
 
 </body>
 

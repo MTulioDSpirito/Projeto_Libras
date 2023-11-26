@@ -6,15 +6,17 @@ body {
   background-color: #637F8D
 }
 
+#home-icon {
 
-.user-info-menu {
-  align-items: center;
+  color: black;
 }
 
-
 .text-main-color {
-  display: flex;
+
   text-align: center;
+  font-size: larger;
+
+
 }
 
 .sign-up {
@@ -23,18 +25,66 @@ body {
 
 }
 
+.librasmao {
+
+  margin-right: 50%;
+  flex-direction: column;
+
+  margin-bottom: 10%;
+
+}
+
+#pergunta {
+
+  font-size: large;
+
+
+
+}
+
+
+
+.quiz-option {
+  font-size: 2em;
+  text-align: justify;
+  position: relative;
+  top: -24%;
+  left: 30%;
+
+  justify-content: center
+}
+
+
+
 .sign-up p {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
+}
+
+.sign-up a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.form-login {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .user-info {
   text-align: center;
   font-size: 14px;
   align-items: baseline;
+
 }
+
+
+
 
 .menu-bar {
   display: flex;
@@ -44,8 +94,10 @@ body {
   width: 160%;
   height: 30px;
   margin-bottom: 20px;
-  background-color: #ffffff; /* fundo branco */
-  border: 1px solid #d3ceced0; /* borda cinza claro com espessura fina */
+  background-color: #ffffff;
+  /* fundo branco */
+  border: 1px solid #d3ceced0;
+  /* borda cinza claro com espessura fina */
   border-radius: 10px;
   padding: 35px;
   margin-left: 5%;
@@ -56,6 +108,14 @@ body {
 
 .form-container {
   padding: 1rem auto;
+}
+
+.form-container p {
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.form-container {
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -63,8 +123,22 @@ body {
   text-align: center;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.logo-container h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-left: 5px;
+}
 
+#validar {
+  width: 12rem;
+}
 
 @media (min-width: 400px) {
   .sign-up {
@@ -72,24 +146,25 @@ body {
   }
 }
 
-
-
 @media (min-width: 500px) {
   .sign-up {
     width: 12rem;
   }
+
   .menu-bar {
     width: 110%;
-    }
+  }
 }
 
-
-
 @media (min-width: 600px) {
+
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
   .sign-up {
     width: 15rem;
   }
+
   .menu-bar {
+
     width: 115%;
     align-items: center;
     justify-content: center;
@@ -103,39 +178,55 @@ body {
 
 
 @media (min-width: 800px) {
+
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
   .sign-up {
     width: 26rem;
     height: max-content;
   }
+
+
   .menu-bar {
     width: 115%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-left: 1%;
+
     top: 480px;
   }
+
 }
 
 
 @media (min-width: 1024px) {
+
+  /* big landscape tablets, laptops, and desktops */
   .sign-up {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30rem;
+    height: max-content;
+
   }
+
   .icones {
     display: flex;
     width: 26rem;
+
   }
+
   .menu-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 180%;
-  height: 10;
-  margin-left: 2%;
-  top: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 180%;
+    height: 10;
+    margin-left: 2%;
+    top: 480px;
   }
+
 }
 
 body {
