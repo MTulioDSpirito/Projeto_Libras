@@ -20,5 +20,14 @@ function validarLogin() {
     validarLogin();
   });
   
+  document.addEventListener('DOMContentLoaded', function () {
+    const botaoCriarPerfil = document.getElementById('botao-criar-perfil');
+    botaoCriarPerfil.addEventListener('click', function (event) {
+      event.preventDefault();
+      window.location.href = '../cadastro_tela4/cadastro.html';
+    });
+  });
+  
+  
   
   
