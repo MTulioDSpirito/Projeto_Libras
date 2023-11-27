@@ -19,7 +19,10 @@ body {
     padding: 5rem;
   
   }
-  
+
+  #delete-user {
+    width: 17px;
+  }
   
   .sign-up p {
     font-family: "Inter", sans-serif;
