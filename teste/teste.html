@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .editable-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .editable-value {
+      border: 1px solid #ccc;
+      padding: 5px;
+      margin-right: 5px;
+      min-width: 100px; /* Defina a largura mínima desejada para o campo editável */
+    }
+
+    .edit-icon {
+      cursor: pointer;
+    }
+  </style>
+  <title>Edit Variable Example</title>
+</head>
+<body>
+
+  <div class="editable-container">
+    <div class="editable-value" contenteditable="true">Olá, Mundo!</div>
+    <span class="edit-icon" onclick="saveChanges()">✅</span>
+  </div>
+
+  <script>
+    function saveChanges() {
+      const editableValue = document.querySelector(".editable-value");
+
+      // Obtem o novo valor editado
+      const newValue = editableValue.innerText;
+
+      // Faça algo com o novo valor, por exemplo, exiba no console
+      console.log("Novo Valor:", newValue);
+    }
+  </script>
+
+</body>
+</html>
