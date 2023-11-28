@@ -14,7 +14,12 @@ body {
   
   }
 
-  .users h1 {
+  .user h1 {
+    font-family: "Inter", sans-serif;
+  }
+
+
+  .user ul {
     font-family: "Inter", sans-serif;
   }
   
