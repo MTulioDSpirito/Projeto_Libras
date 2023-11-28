@@ -13,6 +13,10 @@ body {
   
   
   }
+
+  .users h1 {
+    font-family: "Inter", sans-serif;
+  }
   
   .sign-up {
     margin: 10rem auto;
