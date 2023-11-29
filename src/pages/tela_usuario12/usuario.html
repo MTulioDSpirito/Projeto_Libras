@@ -26,36 +26,33 @@
       <p class="text-main-color">EDITAR PERFIL</p>
       <br />
       <br />
-        <img src="../img/user.png" alt="icon" width="50" height="50" style="color: black;" />
-        <a href="">
-        <span id="editIcon" onclick="enableEditing()">✏️</span>
-        </a>
-        <br />
-        <p1 class="user-info" id="user-info"></p1>
-        <a href="">
-        <span id="editIcon" onclick="enableEditing()">✏️</span>
-        </a>
-        <br />
+        <img src="../img/user.png" alt="icon" width="50" height="50" />
+        <input type = "text" id="user-info">
+        <button id="editButton"><img src="../img/edit.png" alt="icon" width="20"  height="20" /></button>
+        <button id="saveButton" style="display: none;"><img src="../img/save.png" alt="icon" width="20" height="20" /></button></button>
+  
       <br />
+      <br /> 
       <br />
-      <br />
-      <div class="user-info">
+      <div>
         <label for="emailInput">E-mail:</label>
-        <input type="email" id="emailInput" readonly>
-        <a href="">
-        <span id="editIcon" onclick="enableEditing()">✏️</span>
-        </a>
-        <br />
-        <label for="passwordInput">Senha:</label>
-        <input type="password" id="passwordInput" readonly>
-        <a href="">
-        <span id="editIcon" onclick="enableEditing()">✏️</span>
-        </a>      
+        <input type="email" id="emailInput" >
+        <button id="editButton2"> <img src="../img/edit.png" alt="icon" width="15"  height="15" /> </button>
+        <button id="saveButton2" style="display: none;"><img src="../img/save.png" alt="icon" width="15" height="15" /></button>
       </div>
+        <br/>
+       
+        <div>
+        <label for="passwordInput">Senha:</label>
+        <input type="password" id="passwordInput" > 
+        <button id="editButton3"> <img src="../img/edit.png" alt="icon" width="15"  height="15" /> </button>
+        <button id="saveButton3" style="display: none;"><img src="../img/save.png" alt="icon" width="15" height="15" /></button>
+        <input type="checkbox" onclick="mostrarSenha()">Mostrar Senha
+      </div>
+      
       <br />
       <br />
-      <br />
-      <br />
+      
       <div class="menu-bar">
         <a href="../home_tela05/home.html">
           <img src="../img/home.png" alt="icon" width="50" height="50" />
