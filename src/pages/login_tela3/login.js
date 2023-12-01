@@ -2,7 +2,7 @@
 function validarLogin() {
   var email = document.getElementById('email').value;
   var senha = document.getElementById('senha').value;
-
+  
   // Verifica se o email ou a senha estão em branco
   if (email === '' || senha === '') {
       alert('Favor preencher todos os campos');
@@ -14,6 +14,8 @@ function validarLogin() {
 
   for (var i = 0; i < usuarios.length; i++) {
     if (email == usuarios[i].email && senha == usuarios[i].senha) {
+      // Salvar o usuário logado no localStorage
+      localStorage.setItem('usuarioLogado', JSON.stringify(usuarios[i]));
       alert('Login bem sucedido!');
       window.location.href = '../home_tela05/home.html'; // Redireciona para a página inicial
       return;

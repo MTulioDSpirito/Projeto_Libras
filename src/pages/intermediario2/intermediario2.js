@@ -1,11 +1,13 @@
 
+
 window.onload = function() {
-    var usuario = JSON.parse(localStorage.getItem('usuario'));
-    if(usuario) {
-      document.getElementById('user-info').textContent = usuario.nome;
-    }
-    
+  var usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+  
+  if (usuarioLogado) {
+    document.getElementById('user-info').textContent = usuarioLogado.nome;
+  }
 }
+
 
 function checkAnswer() {
   let radios = document.getElementsByName('quiz');

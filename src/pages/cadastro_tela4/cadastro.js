@@ -38,6 +38,8 @@ document.getElementById('validar').addEventListener('click', function (event) {
   salvarDados();
 });
 
+
+
 // Adicionando evento de clique ao botão de login
 document.getElementById('login').addEventListener('click', function (event) {
   event.preventDefault();
@@ -52,3 +54,12 @@ function mostrarSenha() {
     senha.type = "password";
   }
 }
+
+
+
+
+
+
+
+
+

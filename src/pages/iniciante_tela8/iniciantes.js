@@ -1,10 +1,11 @@
 
-  window.onload = function() {
-    var usuario = JSON.parse(localStorage.getItem('usuario'));
-    if(usuario) {
-      document.getElementById('user-info').textContent = usuario.nome;
-    }
-    
+
+window.onload = function() {
+  var usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+  
+  if (usuarioLogado) {
+    document.getElementById('user-info').textContent = usuarioLogado.nome;
+  }
 }
 
 function checkAnswer() {

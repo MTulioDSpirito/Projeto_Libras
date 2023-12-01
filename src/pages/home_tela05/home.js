@@ -7,13 +7,9 @@ document.getElementById('logoutBtn').addEventListener('click', function() {
 
 
 window.onload = function() {
-  var usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+  var usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
   
-  // Aqui você pode especificar o índice do usuário que deseja buscar
-  var indiceUsuario = 0;
-
-  if (usuarios.length > indiceUsuario) {
-    var usuario = usuarios[indiceUsuario];
-    document.getElementById('user-info').textContent = usuario.nome;
+  if (usuarioLogado) {
+    document.getElementById('user-info').textContent = usuarioLogado.nome;
   }
 }

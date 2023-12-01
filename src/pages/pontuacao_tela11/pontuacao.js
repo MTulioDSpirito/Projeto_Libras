@@ -1,9 +1,13 @@
 
+
 window.onload = function() {
-  var usuario = JSON.parse(localStorage.getItem('usuario'));
-  if(usuario) {
-    document.getElementById('user-info').textContent = usuario.nome;
+  var usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+  
+  if (usuarioLogado) {
+    document.getElementById('user-info').textContent = usuarioLogado.nome;
   }
+
+
 
   
   // Recupere a pontuação total do armazenamento local e converta para um número. Se não houver pontuação salva, use 0.
