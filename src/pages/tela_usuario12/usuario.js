@@ -26,7 +26,7 @@ document.getElementById('editButton').addEventListener('click', function() {
   document.getElementById('user-info').readOnly = false;
 
   // mostrar o botão salvar e esconder o botão editar
-  document.getElementById('saveButton').style.display = 'flex';
+  document.getElementById('saveButton').style.display = 'block';
   document.getElementById('editButton').style.display = 'none';
 });
 

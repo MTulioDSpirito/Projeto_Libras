@@ -5,10 +5,10 @@
           if (usuarioObjeto && usuarioObjeto.nome && usuarioObjeto.email) {
             const listaLocalStorage = document.getElementById('listaLocalStorage');
             const listItemNome = document.createElement('li');
-            listItemNome.textContent = `nome: ${usuarioObjeto.nome}`;
+            listItemNome.textContent = `Nome: ${usuarioObjeto.nome}`;
             listaLocalStorage.appendChild(listItemNome);
             const listItemEmail = document.createElement('li');
-            listItemEmail.textContent = `email: ${usuarioObjeto.email}`;
+            listItemEmail.textContent = `Email: ${usuarioObjeto.email}`;
             listaLocalStorage.appendChild(listItemEmail);
           } else {
             console.log('Chave "usuario" e/ou subchaves "nome" e "email" não encontradas no localStorage.');
