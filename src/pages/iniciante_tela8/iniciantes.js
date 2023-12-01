@@ -16,7 +16,8 @@ function checkAnswer() {
       points = 0; 
       if(radios[i].value === 'T') {
         points += 3;
-      }
+      }else
+      points = 0
       // Salve a nova pontuação no armazenamento local.
       localStorage.setItem('points', points);
       break;

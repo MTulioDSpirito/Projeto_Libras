@@ -35,4 +35,18 @@ document.getElementById('result').innerText = 'Você acertou ' + questions + ' q
   else if (points == none){
     points == 0 ;
   }
+  var restartButton = document.getElementById('restart-button');
+
+  // Adicione um evento de clique ao botão de recomeçar
+  restartButton.addEventListener('click', function() {
+    // Zere a pontuação no localStorage
+    localStorage.setItem('points', 0);
+    
+  });
+
+
+
+
 }
+
+
