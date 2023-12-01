@@ -10,8 +10,7 @@
   <link rel="stylesheet" href="../../pages/tela_usuario12/usuario.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet" />
 
   <title>DuoLibras</title>
 </head>
@@ -20,39 +19,36 @@
 
 
   <div class="card-mobile sign-up">
-
-    <!-- Adicione um estilo CSS para mover a div para cia -->
-    <div class="form-container" style="height: 72vh; position:relative; top: 50px;">
-      <p class="text-main-color">EDITAR PERFIL</p>
-      <br />
-      <br />
+    <div class="form-container" style="height: 72vh;">
+      <div class="text-main-color">
+        <p>EDITAR PERFIL</p>
+      </div>
+      <div class="fotoPerfil">
         <img src="../img/user.png" alt="icon" width="50" height="50" />
-        <br>
-        <input type = "text" id="user-info">
-        <br>
-        <button id="editButton"><img src="../img/edit.png" alt="icon" width="20"  height="20" /></button>
-        <button id="saveButton" style="display: none;"><img src="../img/save.png" alt="icon" width="20" height="20" /></button></button>
-      <br />
-      <div>
-        <label for="emailInput">E-mail:</label>
-        <input type="email" id="emailInput" >
-        <button id="editButton2"> <img src="../img/edit.png" alt="icon" width="15"  height="15" /> </button>
-        <button id="saveButton2" style="display: none;"><img src="../img/save.png" alt="icon" width="15" height="15" /></button>
       </div>
-        <br/>
-       
-        <div>
-        <label for="passwordInput">Senha:</label>
-        <input type="password" id="passwordInput" > 
-        <button id="editButton3"> <img src="../img/edit.png" alt="icon" width="15"  height="15" /> </button>
-        <button id="saveButton3" style="display: none;"><img src="../img/save.png" alt="icon" width="15" height="15" /></button>
-        <input type="checkbox" onclick="mostrarSenha()">Mostrar Senha
+      <div class="PERFIL">
+
+        <div class="card-content1">
+          <label for="nameInput"> Nome:</label>
+          <input type="text" id="user-info">
+          <button id="editButton"><img src="../img/edit.png" alt="icon" width="15" height="15" /></button>
+
+        </div>
+
+        <div class="card-content2">
+          <label for="emailInput">Email:</label>
+          <input type="email" id="emailInput">
+          <button id="editButton2"> <img src="../img/edit.png" alt="icon" width="15" height="15" /> </button>
+        </div>
+
+        <div class="card-content3">
+          <label for="passwordInput">Senha:</label>
+          <input type="password" id="passwordInput">
+          <button id="editButton3"> <img src="../img/edit.png" alt="icon" width="15" height="15" /> </button>
+        </div>
       </div>
-      
-      <br />
-      <br />
-      <br>
-      <br>
+      <input type="checkbox" onclick="mostrarSenha()">Mostrar a senha
+
       <div class="menu-bar">
         <a href="../home_tela05/home.html">
           <img src="../img/home.png" alt="icon" width="50" height="50" />
@@ -60,8 +56,10 @@
         <a href="">
           <img id="home-icon" class="left-nav-icon" src="../img/tarefas.png" alt="tarefas" width="50" height="50" />
         </a>
+        </a>
       </div>
     </div>
+  </div>
   </div>
 
 

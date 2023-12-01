@@ -4,13 +4,63 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #637F8D
-  }
-  
+}
+#home-icon {
+
+  color: black;
+}
+
+.text-main-color {
+
+  text-align: center;
+  font-size: larger;
+
+
+}
+
 .sign-up {
   margin: 10rem auto;
   padding: 5rem;
 
 }
+.librasmao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#pergunta{
+
+font-size: large;
+
+
+
+}
+
+
+
+/* Mantenha o restante do seu CSS inalterado */
+/* Mantenha o restante do seu CSS inalterado */
+
+.quiz-option {
+  font-size: 2em;
+  text-align: justify;
+  position: relative;
+  justify-content: center;
+}
+
+#user-input {
+  width: 250px; /* Ajuste conforme necessário */
+  height: 40px; /* Ajuste conforme necessário */
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
 
 .sign-up p {
   font-family: "Inter", sans-serif;
@@ -18,88 +68,56 @@ body {
   font-size: 1.2rem;
 }
 
-.fotoPerfil
-{
-  padding-top: 25px;
+.sign-up a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 5px;
 }
-.PERFIL {
+
+.form-login {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
-  width: 120%;
-  height: 30px;
-  margin-bottom: 20px;
-
-
-
-  padding: 40px;
-  margin-left: 5%;
-  position:unset;
-  top: 680px;
-}
-.card-content-area {
-
-display: flex;
-
-flex-direction: column;
-
-padding:10px 0;
-
-}
-.card-content1 input{
-  padding:10px 0;
-  margin-top: 10px;
-  padding:0 5px;
-  background-color: transparent;
-  border:none;
-  border-bottom: 1px solid #0e0e0e;
-  outline: none;
-}
-.card-content2 input{
-  padding:10px 0;
-  margin-top: 10px;
-  padding:0 5px;
-  background-color: transparent;
-  border:none;
-  border-bottom: 1px solid #0e0e0e;
-  outline: none;
-}
-.card-content3 input{
-  padding:10px 0;
-  margin-top: 10px;
-  padding:0 5px;
-  background-color: transparent;
-  border:none;
-  border-bottom: 1px solid #0e0e0e;
-  outline: none;
 }
 
-.text-main-color
-{
-  display: flex;
-  margin-top: 150px; 
+.user-info {
+  text-align: center;
+  font-size: 14px;
+  align-items: baseline;
+
 }
+
+
+
+
 .menu-bar {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 100px;
-  width: 50px;
+  margin-top: 5px;
+  width: 160%;
   height: 30px;
   margin-bottom: 20px;
-  background-color: #ffffff;
-  border: 1px solid #d3ceced0;
+  background-color: #ffffff; /* fundo branco */
+  border: 1px solid #d3ceced0; /* borda cinza claro com espessura fina */
   border-radius: 10px;
-
-  padding-top: 30px;;
-  padding-bottom: 30px;
+  padding: 35px;
   margin-left: 5%;
-  position:unset;
+  position: absolute;
+  top: 480px;
 }
 
 
+.form-container {
+  padding: 1rem auto;
+}
+
+.form-container p {
+  text-transform: uppercase;
+  margin: 1rem;
+}
 
 .form-container {
   flex-direction: column;
@@ -109,24 +127,43 @@ padding:10px 0;
   text-align: center;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-left: 5px;
+}
 
 
 
+
+#validar {
+  width: 12rem;
+}
 
 @media (min-width: 400px) {
   .sign-up {
     width: 8rem;
+
   }
 }
 
 @media (min-width: 500px) {
   .sign-up {
     width: 12rem;
-  }
 
-  .menu-bar {
-    width: 110%;
   }
+  .menu-bar {
+    
+    width: 110%;
+    
+    }
 }
 
 @media (min-width: 600px) {
@@ -135,7 +172,7 @@ padding:10px 0;
   .sign-up {
     width: 15rem;
   }
-
+  
   .menu-bar {
 
     width: 115%;
@@ -143,9 +180,18 @@ padding:10px 0;
     justify-content: center;
     justify-content: space-evenly;
     height: 30px;
+
+
+
     margin-left: 1%;
-    top: 980px;
+
+    top: 480px;
+
+
+
+
   }
+
 }
 
 
@@ -166,7 +212,7 @@ padding:10px 0;
     justify-content: space-evenly;
     margin-left: 1%;
 
-    top: 980px;
+    top: 480px;
   }
 
 }
@@ -191,14 +237,21 @@ padding:10px 0;
   }
 
   .menu-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 190%;
-    height: 10;
-    margin-left: 2%;
-    top: 980px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 180%;
+  height: 10;
+  margin-left: 2%;
+  top: 480px;
   }
-
+  
 }
 
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #637F8D
+}
