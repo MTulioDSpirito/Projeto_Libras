@@ -9,12 +9,18 @@ function validarLogin() {
       return;  // Retorna cedo para evitar executar o resto da função
   }
 
-  var usuario = JSON.parse(localStorage.getItem('usuario'));
+  // Recuperar os usuários do localStorage
+  var usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-  if (email == usuario.email && senha == usuario.senha) {
-    alert('Login bem sucedido!');
-    window.location.href = '../home_tela05/home.html'; // Redireciona para a página inicial
-  } else if (email === 'adm@gmail.com' && senha === 'admin') {
+  for (var i = 0; i < usuarios.length; i++) {
+    if (email == usuarios[i].email && senha == usuarios[i].senha) {
+      alert('Login bem sucedido!');
+      window.location.href = '../home_tela05/home.html'; // Redireciona para a página inicial
+      return;
+    }
+  }
+
+  if (email === 'adm@gmail.com' && senha === 'admin') {
       // Redirecionar para a página de administração
       window.location.href = '../tela_admin/admin.html';
   } else {

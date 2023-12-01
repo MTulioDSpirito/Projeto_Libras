@@ -1,15 +1,18 @@
+
 function salvarDados() {
   var nome = document.getElementById('nome').value;
   var email = document.getElementById('email').value;
   var senha = document.getElementById('senha').value;
 
-  // Recuperar o usuário do localStorage
-  var usuarioExistente = JSON.parse(localStorage.getItem('usuario'));
+  // Recuperar os usuários do localStorage
+  var usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
   // Verificar se o e-mail já foi cadastrado
-  if (usuarioExistente && usuarioExistente.email === email) {
+  for (var i = 0; i < usuarios.length; i++) {
+    if (usuarios[i].email === email) {
       alert('Este e-mail já foi cadastrado!');
       return;
+    }
   }
 
   var usuario = {
@@ -18,10 +21,16 @@ function salvarDados() {
     senha: senha
   };
 
-  localStorage.setItem('usuario', JSON.stringify(usuario));
+  // Adicionar o novo usuário ao array de usuários
+  usuarios.push(usuario);
+
+  // Salvar o array de usuários no localStorage
+  localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
   alert('USUÁRIO CRIADO COM SUCESSO !!');
   window.location.href = "../login_tela3/login.html";
 }
+
 
 // Adicionando evento de clique ao botão de cadastro
 document.getElementById('validar').addEventListener('click', function (event) {

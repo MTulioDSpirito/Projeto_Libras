@@ -1,20 +1,45 @@
-   function criarListaNomeEmailUsuarioLocalStorage() {
-        if (localStorage.length > 0) {
-          const usuarioString = localStorage.getItem('usuario');
-          const usuarioObjeto = JSON.parse(usuarioString);
-          if (usuarioObjeto && usuarioObjeto.nome && usuarioObjeto.email) {
-            const listaLocalStorage = document.getElementById('listaLocalStorage');
-            const listItemNome = document.createElement('li');
-            listItemNome.textContent = `Nome: ${usuarioObjeto.nome}`;
-            listaLocalStorage.appendChild(listItemNome);
-            const listItemEmail = document.createElement('li');
-            listItemEmail.textContent = `Email: ${usuarioObjeto.email}`;
-            listaLocalStorage.appendChild(listItemEmail);
-          } else {
-            console.log('Chave "usuario" e/ou subchaves "nome" e "email" não encontradas no localStorage.');
+function criarListaNomeEmailUsuarioLocalStorage() {
+  if (localStorage.length > 0) {
+      const usuariosString = localStorage.getItem('usuarios');
+      const usuariosArray = JSON.parse(usuariosString);
+      
+      if (usuariosArray && usuariosArray.length > 0) {
+          const listaLocalStorage = document.getElementById('listaLocalStorage');
+          
+          for (let i = 0; i < usuariosArray.length; i++) {
+              const usuario = usuariosArray[i];
+              
+              if (usuario && usuario.nome && usuario.email) {
+                  const listItemNome = document.createElement('li');
+                  listItemNome.textContent = `Nome: ${usuario.nome}`;
+                  listaLocalStorage.appendChild(listItemNome);
+                  
+                  const listItemEmail = document.createElement('li');
+                  listItemEmail.textContent = `Email: ${usuario.email}`;
+                  listaLocalStorage.appendChild(listItemEmail);
+
+                  // Adicionar uma quebra de linha após cada par de nome e e-mail
+                  const breakLine = document.createElement('br');
+                  listaLocalStorage.appendChild(breakLine);
+              }
           }
-        } else {
-          console.log('Nenhum dado encontrado no localStorage.');
-        }
+      } else {
+          console.log('Chave "usuarios" não encontrada no localStorage ou nenhum usuário salvo.');
       }
-      window.onload = criarListaNomeEmailUsuarioLocalStorage;
+  } else {
+      console.log('Nenhum dado encontrado no localStorage.');
+  }
+}
+
+window.onload = criarListaNomeEmailUsuarioLocalStorage;
+
+
+
+document.getElementById('erase').addEventListener('click', function() {
+    // Limpar todos os usuários do localStorage
+    localStorage.removeItem('usuarios');
+  
+    // Limpar a lista de usuários na página
+    document.getElementById('listaLocalStorage').innerHTML = '';
+  });
+  
