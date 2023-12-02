@@ -9,6 +9,22 @@ function atualizarDados(campo, valor) {
 
     // Salvar o usuário logado atualizado no localStorage
     localStorage.setItem('usuarioLogado', JSON.stringify(usuarioLogado));
+
+    // Recuperar todos os usuários do localStorage
+    var usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+    // Encontrar o usuário logado na lista de todos os usuários
+    var usuario = usuarios.find(function(user) {
+      return user.email === usuarioLogado.email;
+    });
+
+    if (usuario) {
+      // Atualizar o campo do usuário
+      usuario[campo] = valor;
+
+      // Salvar todos os usuários atualizados no localStorage
+      localStorage.setItem('usuarios', JSON.stringify(usuarios));
+    }
   }
 }
 
