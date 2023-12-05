@@ -37,11 +37,13 @@ body {
 #pergunta {
 
   font-size: large;
-
-
-
 }
 
+
+.p2 {
+  position: relative;
+  font-size: large;
+}
 
 
 .quiz-option {
