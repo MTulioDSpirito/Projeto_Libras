@@ -18,15 +18,21 @@ body {
 
 }
 
+.librasmao {
+  float: right;
+}
 .sign-up {
   margin: 10rem auto;
   padding: 5rem;
 
 }
-.librasmao {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ .librasmao {
+  
+  margin-right: 50%;
+  flex-direction: column;
+  
+  margin-bottom: 10%;
+
 }
 #pergunta{
 
@@ -38,27 +44,18 @@ font-size: large;
 
 
 
-/* Mantenha o restante do seu CSS inalterado */
-/* Mantenha o restante do seu CSS inalterado */
-
-.quiz-option {
-  font-size: 2em;
-  text-align: justify;
-  position: relative;
-  justify-content: center;
-}
-
-#user-input {
-  width: 250px; /* Ajuste conforme necessário */
-  height: 40px; /* Ajuste conforme necessário */
-  margin-bottom: 10px;
-}
+  .quiz-option {
+    font-size: 2em;
+    text-align: justify;
+    position: relative;
+    top: -24%;
+    left: 30%;
+    
+    justify-content: center
 
 
 
-
-
-
+  }
 
 
 
@@ -160,10 +157,19 @@ font-size: large;
 
   }
   .menu-bar {
-    
+
     width: 110%;
-    
-    }
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 30px;
+
+
+    margin-left: 1%;
+
+    top: 480px;
+
+  }
 }
 
 @media (min-width: 600px) {
@@ -182,10 +188,9 @@ font-size: large;
     height: 30px;
 
 
-
     margin-left: 1%;
 
-    top: 480px;
+    top: 510px;
 
 
 
@@ -212,7 +217,7 @@ font-size: large;
     justify-content: space-evenly;
     margin-left: 1%;
 
-    top: 480px;
+    top: 510px;
   }
 
 }
@@ -230,4 +235,28 @@ font-size: large;
 
   }
 
+  .icones {
+    display: flex;
+    width: 26rem;
+
+  }
+
+  .menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 125%;
+  height: 10;
+  margin-left: 2%;
+  top: 500px;
+  }
+  
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #637F8D
 }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="../base2.css" />
+  <link rel="stylesheet" href="../../pages/iniciante_tela8/iniciantes.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto&display=swap"
+    rel="stylesheet" />
+
+  <title>DuoLibras</title>
+</head>
+
+<body>
+
+
+  <div class="card-mobile sign-up">
+    <!-- Adicione um estilo CSS para mover a div para cia -->
+    <div class="form-container" style="height: 72vh; position:relative; top: -10px;">
+      <img src="C:\Projeto_Libras\docs\img\logo_duolibras 2.png" class="card-mobile" alt=Logo" width="250" height="45">
+      <br/>
+      <p> Para começar, SELECIONE SUA DIFICULDADE</p>
+      <br />
+      <br />
+      <br />
+      <div>
+        <p>Qual letra representa a figura ao lado?</p>
+        <input type="radio" id="T" name="quiz" value="T">
+        <label for="T">T</label><br>
+        <input type="radio" id="L" name="quiz" value="L">
+        <label for="L">L</label><br>
+        <input type="radio" id="M" name="quiz" value="M">
+        <label for="M">M</label><br>
+        <button onclick="checkAnswer()">Submit</button>
+    
+        <br />
+        <br />
+        
+        
+        <br />
+        <br />
+        
+        
+        <br />
+        <br />
+        <div class="menu-bar">
+          <a href="">
+            <img src="C:\Projeto_Libras\docs\img\home.png" alt="icon" width="50" height="50"/>
+          </a>
+          <a href="">
+            <img id="home-icon" class="left-nav-icon" src="C:\Projeto_Libras\docs\img\tarefas.png" alt="home"
+              width="50" height="50" />
+          </a>
+          <a href="">
+            <img src="C:\Projeto_Libras\docs\img\user.png" alt="icon" width="50" height="50" style="color: black;"/>
+            <br />
+            <p1 class="user-info" id="user-info"></p1>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <script src="home.js"></script>
+  <script>
+    let points = 0;
+    function checkAnswer() {
+      let radios = document.getElementsByName('quiz');
+      for (let i = 0, length = radios.length; i < length; i++) {
+        if (radios[i].checked) {
+          if(radios[i].value === 'T') {
+            points += 3;
+          }
+          break;
+        }
+      }
+    }
+  </script>
+
+</body>
+
+</html>

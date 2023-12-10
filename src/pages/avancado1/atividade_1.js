@@ -1,32 +1,37 @@
+
+
 window.onload = function() {
-    var usuario = JSON.parse(localStorage.getItem('usuario'));
-    if (usuario) {
-        document.getElementById('user-info').textContent = usuario.nome;
+    var usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+    
+    if (usuarioLogado) {
+      document.getElementById('user-info').textContent = usuarioLogado.nome;
     }
-}
-
-function checkAnswer() {
-    const userInput = document.getElementById('user-input').value.toLowerCase();
-
-    // Verifique se o usuário já respondeu à pergunta anteriormente
-    if (localStorage.getItem('9')) {
-        alert('Você já acertou esta pergunta antes. Não serão atribuídos mais pontos.');
-        return; // Saia da função para evitar atribuir mais pontos
+  }
+  
+  function checkAnswer() {
+    let radios = document.getElementsByName('quiz');
+     {for (let i = 0, length = radios.length; i < length; i++)
+      if (radios[i].checked) {
+        // Recupere a pontuação atual do armazenamento local e converta para um número. Se não houver pontuação salva, use 0.
+        let points = Number(localStorage.getItem('points')) || 0;
+        points = 0; 
+        if(radios[i].value === 'T') {
+          points += 3;
+        }else
+        points = 0
+        // Salve a nova pontuação no armazenamento local.
+        localStorage.setItem('points', points);
+        break;
+      }
     }
-
-    let points = Number(localStorage.getItem('points')) || 0;
-
-    // Adapte a lógica para pontuar com base na resposta do usuário em texto
-    if (userInput === 'poeira') {
-        points += 3;
-
-        // Marque a pergunta como acertada para evitar atribuir mais pontos
-        localStorage.setItem('9', true);
-    }
-
-    localStorage.setItem('points', points);
-
-    // Adicione aqui a lógica para avançar para a próxima atividade ou página
-    // Por exemplo, redirecionar para a próxima página de atividade
-    // window.location.href = 'próxima_pagina.html'; // Substitua 'próxima_pagina.html' pelo seu URL desejado
-}
+  }
+  
+  window.onload = function() {
+    var gifElement = document.querySelector('.librasmao');
+    setInterval(function() {
+      var src = gifElement.src;
+      gifElement.src = '';
+      gifElement.src = src;
+    }, 10000); // altere 5000 (5 segundos) para a duração da animação do seu GIF
+  }
+  
