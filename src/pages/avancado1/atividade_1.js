@@ -1,12 +1,5 @@
 
-
-window.onload = function() {
-    var usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
-    
-    if (usuarioLogado) {
-      document.getElementById('user-info').textContent = usuarioLogado.nome;
-    }
-  }
+ 
   
   function checkAnswer() {
     let radios = document.getElementsByName('quiz');
@@ -33,5 +26,12 @@ window.onload = function() {
       gifElement.src = '';
       gifElement.src = src;
     }, 10000); // altere 5000 (5 segundos) para a duração da animação do seu GIF
+
+
+    var usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+    
+    if (usuarioLogado) {
+      document.getElementById('user-info').textContent = usuarioLogado.nome;
+    }
   }
   

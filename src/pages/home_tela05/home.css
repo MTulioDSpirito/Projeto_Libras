@@ -196,13 +196,13 @@ body {
     }
     .menu-bar {
   
-      width: 120%;
+      width: 128%;
       align-items: center;
      
       justify-content: space-evenly;
-      height: 30px;
-      margin-left: -8%;
-      top: 500px;
+      height: 20px;
+      margin-left: 0%;
+      top: 515px;
   
     }
 
@@ -249,7 +249,7 @@ body {
 
     .menu-bar {
   
-      width: 120%;
+      width: 128%;
       align-items: center;
       justify-content: center;
       justify-content: space-evenly;
@@ -276,7 +276,7 @@ body {
   
     .icones {
       width: 0.3rem;
-      margin-left: -10px;
+      margin-left: -30px;
     }
     .facil{
       font-size: 20px;
