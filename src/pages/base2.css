@@ -1,5 +1,5 @@
 :root {
-    --theme: #fcffff;
+    --theme: #ffffff;
     --background: #63808e;
     --success: green;
     --warning: --yellow;
@@ -18,7 +18,7 @@
   .bg-main-color {
     border: var(--theme);
     background-color: #001685;
-    color: #f8f8f9;
+    color: #ffffff;
   
   }
   
@@ -159,18 +159,18 @@
   .card-app {
     /* display: flex;
     flex-direction: column; */
-    background-color: rgb(251, 252, 252);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0 0 10px;
     width: 50%;
     height: auto;
     /* margin: auto; */
     margin-top: 2rem;
-    background-color: #f7f8f9;
+    background-color: #ffffff;
   }
   
   .card-mobile {
-    background-color: #fbfdfe;
+    background-color: #ffffff;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
   }
